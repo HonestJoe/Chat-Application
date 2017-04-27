@@ -47,6 +47,7 @@ namespace Client
         {
             try
             {
+                /*
                 // Initialize Delegate
                 this.displayMessageDelegate = new DisplayMessageDelegate(this.AppendLineToChatBox);
 
@@ -56,12 +57,12 @@ namespace Client
                 // Initialize server IP
                 // TODO: Change To Server IP
                 IPAddress serverIP = IPAddress.Parse(GetLocalIP());
-                /*
+                
                 // TODO: Change To recieve input from upcoming text box
                 // WORKAROUND: VPN to school network (or be on mst computer)
                 //             and visit icanhazip.com in a browser and copy IP address here before building
                 // IPAddress serverIP = IPAddress.Parse("131.151.89.23");
-                */
+                
 
                 // Initialize the IPEndPoint for the server and use port 30000
                 IPEndPoint server = new IPEndPoint(serverIP, 30000);
@@ -89,6 +90,7 @@ namespace Client
 
                 // Begin listening for broadcasts
                 clientSocket.BeginReceiveFrom(this.dataStream, 0, this.dataStream.Length, SocketFlags.None, ref epServer, new AsyncCallback(this.ReceiveData), null);
+                */
 
             }
             catch (Exception e)
